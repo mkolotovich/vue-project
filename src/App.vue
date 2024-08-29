@@ -34,7 +34,7 @@ const pages = computed(() => {
   }
   return res
 })
-// const goods = ref([])
+const goods = ref([])
 
 
 function addProduct() {
@@ -68,32 +68,6 @@ function sortProduct() {
     })
   }
 }
-
-const goods = ref([
-  {"name":"a","seller":"1","picked":"reels"},
-  {"name":"b","seller":"2","picked":"stories"},
-  {"name":"c","seller":"3","picked":"reels"},
-  {"name":"4","seller":"4","picked":"stories"},
-  {"name":"5","seller":"5","picked":"reels"},
-  {"name":"6","seller":"6","picked":"stories"},
-  {"name":"7","seller":"7","picked":"reels"},
-  {"name":"8","seller":"8","picked":"stories"},
-  {"name":"9","seller":"9","picked":"reels"},
-  {"name":"10","seller":"10","picked":"stories"},
-  {"name":"11","seller":"11","picked":"reels"},
-  {"name":"12","seller":"12","picked":"stories"},
-  {"name":"13","seller":"13","picked":"reels"},
-  {"name":"14","seller":"14","picked":"stories"},
-  {"name":"15","seller":"15","picked":"reels"},
-  {"name":"16","seller":"16","picked":"stories"},
-  {"name":"17","seller":"17","picked":"stories"},
-  {"name":"18","seller":"18","picked":"reels"},
-  {"name":"19","seller":"19","picked":"stories"},
-  {"name":"20","seller":"20","picked":"reels"},
-  {"name":"21","seller":"21","picked":"stories"},
-  {"name":"22","seller":"22","picked":"reels"},
-  {"name":"23","seller":"23","picked":"stories"}
-])
 
 if (JSON.parse(localStorage.getItem('goods'))) {
   goods.value = JSON.parse(localStorage.getItem('goods'))
